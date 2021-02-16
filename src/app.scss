@@ -8,6 +8,7 @@
     display: none
 }
 $nav-bar-color: #222;
+$green-color: #1A9288;
 // end utility classes
 
 body{
@@ -32,7 +33,7 @@ body{
         font-size: 20px;
     }
     &-right-content a:hover{
-        text-decoration: underline;
+        color: $green-color
     }
     &-right-content a{
         text-decoration: none;
@@ -62,16 +63,26 @@ body{
     }
     & .mac{
     text-transform: lowercase;
-    color: green
+    color: $green-color
     }
     & ul{
         list-style-type: none;
     }
     & ul li{
-        padding-top: 10px
+        padding-top: 15px;
+        font-style: italic;
     }
     & ul li:first-child{
-        padding-top: 20px
+        padding-top: 40px
+    }
+    & .gitkraken{
+        color: $green-color
+    }
+    & .laravel{
+        color: #F17CC1
+    }
+    & .sass{
+        color: #BF4080
     }
 }
 // end main

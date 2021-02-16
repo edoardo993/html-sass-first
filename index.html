@@ -37,13 +37,18 @@
 
         <!-- main -->
         <main class="main">
-            <h1 class="main-title">come iniziare ad usare sass con terminale <span class="mac">mac</span>os!</h1>
-            <h3 class="main-secondary-title">Primi passi per creare una repository tramite GitKraken:</h3>
+            <h1 class="main-title">come iniziare ad usare <span class="sass">sass</span> con terminale <span class="mac">mac</span>os!</h1>
+            <h3 class="main-secondary-title">Primi passi per creare una repository tramite <span class="gitkraken">GitKraken</span>, aggiungendo poi <span class="laravel">LaravelMix</span> per usare <span class="sass">SASS</span>:</h3>
             <ul>
                 <li>1 - Creare repository tramite INIT</li>
                 <li>2 - Aprire il terminale, cercare la cartella creata tramite GitKraken e digitare 'npm init -y' per inizializzare il progetto NPM</li>
                 <li>3 - Senza cambiare directory, digitare 'npm install laravel-mix --save-dev', così da installare il pacchetto LaravelMix</li>
-                <li>4 - </li>
+                <li>4 - Ancora, senza cambiare directory, su terminale digitare 'touch webpack.mix.js'</li>
+                <li>5 - Aprire adesso il proprio IDE ed aprire la cartella creata con GitKraken</li>
+                <li>6 - Aprire il file 'webpack.mix.js' e scrivere all'interno 'let mix=require('laravel-mix')' e 'mix.sass('src/app.scss', 'dist/')' così da definire dove andare a prendere i file SCSS per trasformarli in CSS</li>
+                <li>7 - A questo punto, creare le cartelle 'src' e 'dist' dove andranno all'interno rispettivamente il file SCSS ed il file CSS</li>
+                <li>8 - Adesso, digitare su terminale 'npx mix', cioè il comando che lancia LaravelMix, trasformando così i file SCSS in file CSS</li>
+                <li>9 - Infine, subito dopo digitare di nuovo (sempre su terminale) 'npx mix', successivamente digitare 'npx mix watch' (così da evitare di ripetere il comando 'npx mix' ad ogni modifica SCSS che vogliamo 'controllare' su web)</li>
             </ul>
         </main>
         <!-- end main -->
