@@ -12,7 +12,7 @@ $green-color: #1A9288;
 // end utility classes
 
 body{
-    background-color: antiquewhite
+    background-color: antiquewhite;
 }
 .container{
     width: 1200px;
@@ -35,10 +35,6 @@ body{
     &-right-content a:hover{
         color: $green-color
     }
-    &-right-content a{
-        text-decoration: none;
-        color: $nav-bar-color
-    }
     &-right-content .right-content-list{
         display: flex;
     }
@@ -46,12 +42,17 @@ body{
 .logo{
     height: 80px
 }
+a{
+    text-decoration: none;
+    color: $nav-bar-color
+}
 // end navbar
 
 // main
 .main{
     display: flex;
     flex-direction: column;
+    margin: 0 30px 0 30px;
 
     &-title{
     text-transform: uppercase;
@@ -62,18 +63,20 @@ body{
         font-size: 22px;
     }
     & .mac{
-    text-transform: lowercase;
-    color: $green-color
+        text-transform: lowercase;
+        color: $green-color
     }
     & ul{
         list-style-type: none;
-    }
-    & ul li{
-        padding-top: 15px;
-        font-style: italic;
-    }
-    & ul li:first-child{
-        padding-top: 40px
+
+        & li{
+            padding-top: 15px;
+            font-style: italic;
+
+            &:first-child{
+                padding-top: 40px
+            }
+        }
     }
     & .gitkraken{
         color: $green-color
@@ -86,3 +89,41 @@ body{
     }
 }
 // end main
+
+// footer
+footer{
+    background: rgb(248, 212, 165);
+    width: 100%;
+    padding: 25px 0 25px 0;
+    position: absolute;
+    bottom: 0
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 1200px;
+
+    & ul{
+        list-style-type: none;
+
+        & li{
+            padding: 5px 0 5px 0;
+            font-size: 15px;
+
+            & a{
+                color: rgb(95, 93, 93)
+            }
+
+            & a i{
+                padding-right: 8px
+            }
+
+            & a:hover{
+                color: $green-color
+            }
+        }
+    }
+}
+// end footer

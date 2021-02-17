@@ -33,10 +33,6 @@ body {
 .nav-bar-right-content a:hover {
   color: #1A9288;
 }
-.nav-bar-right-content a {
-  text-decoration: none;
-  color: #222;
-}
 .nav-bar-right-content .right-content-list {
   display: flex;
 }
@@ -45,9 +41,15 @@ body {
   height: 80px;
 }
 
+a {
+  text-decoration: none;
+  color: #222;
+}
+
 .main {
   display: flex;
   flex-direction: column;
+  margin: 0 30px 0 30px;
 }
 .main-title {
   text-transform: uppercase;
@@ -79,4 +81,36 @@ body {
 }
 .main .sass {
   color: #BF4080;
+}
+
+footer {
+  background: #f8d4a5;
+  width: 100%;
+  padding: 25px 0 25px 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 1200px;
+}
+.footer ul {
+  list-style-type: none;
+}
+.footer ul li {
+  padding: 5px 0 5px 0;
+  font-size: 15px;
+}
+.footer ul li a {
+  color: #5f5d5d;
+}
+.footer ul li a i {
+  padding-right: 8px;
+}
+.footer ul li a:hover {
+  color: #1A9288;
 }
